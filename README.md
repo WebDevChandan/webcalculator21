@@ -2,7 +2,7 @@
 
   Project Name : Glassmorphism WebCalculator       
   Creator : WebDevChandan 		                     
-  Site : webdevchandan.hawkviewer.com              
+  Site : https://webdevchandan.hawkviewer.com/             
   License : Creative Commons Attribution License   
   Share and Use This With Proper Credit.           
                                                    
