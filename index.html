@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Calculator 2021</title>
+	<link rel="stylesheet" href="css/style.css">
+<!-- //////////////////////////////////////////////////////////////
+//                                                         //
+//  Project Name : Glassmorphism WebCalculator            //
+//  Author : WebDevChandan 		                         //
+//  Site : webdevchandan.hawkviewer.com                 //
+//  License : Creative Commons Attribution License     //
+//  Share and Use This With Proper Credit.            //
+//                                                   //
+////////////////////////////////////////////////////// -->
+
+</head>
+<body>
+<div class="container">
+	<form class="calculator" name="calc">
+		<input type="text" readonly class="value" name="txt">
+		<span class="num clear" onclick="calc.txt.value = ''">c</span>
+		<span class="num" onclick="back()"> &#x2190;</span>
+		<span class="num" onclick="document.calc.txt.value +='/'">/</span>
+		<span class="num" onclick="document.calc.txt.value +='7'">7</span>
+		<span class="num" onclick="document.calc.txt.value +='8'">8</span>
+		<span class="num" onclick="document.calc.txt.value +='9'">9</span>
+		<span class="num" onclick="document.calc.txt.value +='*'">*</span>
+		<span class="num" onclick="document.calc.txt.value +='4'">4</span>
+		<span class="num" onclick="document.calc.txt.value +='5'">5</span>
+		<span class="num" onclick="document.calc.txt.value +='6'">6</span>
+		<span class="num" onclick="document.calc.txt.value +='-'">-</span>
+		<span class="num" onclick="document.calc.txt.value +='3'">3</span>
+		<span class="num" onclick="document.calc.txt.value +='2'">2</span>
+		<span class="num" onclick="document.calc.txt.value +='1'">1</span>
+		<span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+		<span class="num" onclick="document.calc.txt.value +='0'">0</span>
+		<span class="num" onclick="document.calc.txt.value +='.'">.</span>
+		<span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+
+	</form>
+</div>
+	
+
+	<script type="text/javascript" src="vanillaJS/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container"), {
+		max: 15,
+		speed: 400,
+		glare: true,
+		 "max-glare": 0.3, 
+	});
+
+		function back(){
+	var exp=document.calc.txt.value;
+	document.calc.txt.value=exp.substring(0,exp.length-1);
+}
+</script>
+</body>
+</html>
